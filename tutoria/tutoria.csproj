@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCurvas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCurvas.Designer.cs">
+      <DependentUpon>FrmCurvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRomboC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRomboC.Designer.cs">
+      <DependentUpon>FrmRomboC.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCurbasK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     <Compile Include="Rectangulo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCurvas.resx">
+      <DependentUpon>FrmCurvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRomboC.resx">
+      <DependentUpon>FrmRomboC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCurbasK.resx">
       <DependentUpon>FrmCurbasK.cs</DependentUpon>
