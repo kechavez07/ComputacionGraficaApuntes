@@ -58,23 +58,17 @@
     <Compile Include="FrmCurvas.Designer.cs">
       <DependentUpon>FrmCurvas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFiguraNLados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiguraNLados.Designer.cs">
+      <DependentUpon>FrmFiguraNLados.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRomboC.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRomboC.Designer.cs">
       <DependentUpon>FrmRomboC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCurbasK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCurbasK.Designer.cs">
-      <DependentUpon>FrmCurbasK.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmROmbo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmROmbo.Designer.cs">
-      <DependentUpon>FrmROmbo.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -91,14 +85,11 @@
     <EmbeddedResource Include="FrmCurvas.resx">
       <DependentUpon>FrmCurvas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiguraNLados.resx">
+      <DependentUpon>FrmFiguraNLados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRomboC.resx">
       <DependentUpon>FrmRomboC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCurbasK.resx">
-      <DependentUpon>FrmCurbasK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmROmbo.resx">
-      <DependentUpon>FrmROmbo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

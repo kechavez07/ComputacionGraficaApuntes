@@ -10,26 +10,23 @@ using System.Windows.Forms;
 
 namespace tutoria
 {
-    public partial class Home : Form
+    public partial class FrmFiguraNLados : Form
     {
-        public Home()
+        private Rectangulo objRectangulo = new Rectangulo();
+
+        public FrmFiguraNLados()
         {
             InitializeComponent();
         }
 
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        private void FrmFiguraNLados_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void curbaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnGraficar_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void romboToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-         
+           objRectangulo.ReadData(txtRadio, txtLados);
         }
     }
 }
