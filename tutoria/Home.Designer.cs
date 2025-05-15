@@ -30,20 +30,46 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.figuraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kleberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.curbaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.romboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.figuraToolStripMenuItem});
+            this.figuraToolStripMenuItem,
+            this.kleberToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // figuraToolStripMenuItem
+            // 
+            this.figuraToolStripMenuItem.Name = "figuraToolStripMenuItem";
+            this.figuraToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.figuraToolStripMenuItem.Text = "figura";
+            // 
+            // kleberToolStripMenuItem
+            // 
+            this.kleberToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.curbaToolStripMenuItem,
+            this.romboToolStripMenuItem});
+            this.kleberToolStripMenuItem.Name = "kleberToolStripMenuItem";
+            this.kleberToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.kleberToolStripMenuItem.Text = "kleber";
+            // 
+            // curbaToolStripMenuItem
+            // 
+            this.curbaToolStripMenuItem.Name = "curbaToolStripMenuItem";
+            this.curbaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.curbaToolStripMenuItem.Text = "curba";
+            this.curbaToolStripMenuItem.Click += new System.EventHandler(this.curbaToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -51,11 +77,12 @@
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
-            // figuraToolStripMenuItem
+            // romboToolStripMenuItem
             // 
-            this.figuraToolStripMenuItem.Name = "figuraToolStripMenuItem";
-            this.figuraToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.figuraToolStripMenuItem.Text = "figura";
+            this.romboToolStripMenuItem.Name = "romboToolStripMenuItem";
+            this.romboToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.romboToolStripMenuItem.Text = "rombo";
+            this.romboToolStripMenuItem.Click += new System.EventHandler(this.romboToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -79,5 +106,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem figuraToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem kleberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem curbaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem romboToolStripMenuItem;
     }
 }

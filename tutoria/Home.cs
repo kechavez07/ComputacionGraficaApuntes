@@ -21,5 +21,17 @@ namespace tutoria
         {
 
         }
+
+        private void curbaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCurbasK curba = new FrmCurbasK();
+            curba.ShowDialog();
+        }
+
+        private void romboToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmROmbo frmROmbo = new FrmROmbo();
+            frmROmbo.ShowDialog();
+        }
     }
 }

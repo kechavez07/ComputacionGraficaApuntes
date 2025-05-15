@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCurbasK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCurbasK.Designer.cs">
+      <DependentUpon>FrmCurbasK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmROmbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmROmbo.Designer.cs">
+      <DependentUpon>FrmROmbo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     <Compile Include="Rectangulo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCurbasK.resx">
+      <DependentUpon>FrmCurbasK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmROmbo.resx">
+      <DependentUpon>FrmROmbo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
