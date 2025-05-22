@@ -16,7 +16,7 @@ namespace tutoria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmFiguraNLados());
+            Application.Run(new Form1());
         }
     }
 }

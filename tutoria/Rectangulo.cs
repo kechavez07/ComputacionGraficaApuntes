@@ -14,15 +14,18 @@ namespace tutoria
         private float mWidth;
         private float mHeight;
         private float mPerimeter;
-        private float mArea; 
-        private Graphics mGraph;
+        private float mArea;
+        public int rotationAngle;
         private const float SF = 20;
         private Pen mPen;
-
+        public int X;
+        public int Y;
         public Rectangulo()
         {
             mWidth = 0.0f; mHeight = 0.0f;
             mPerimeter = 0.0f; mArea = 0.0f;
+            rotationAngle = 0;
+            X = 0; Y = 0;
 
         }
         public void ReadData(TextBox txtWidth, TextBox txtHeight)
@@ -65,13 +68,17 @@ namespace tutoria
             txtWidth.Focus();
             picCanvas.Refresh();
         }
-        public void PlotShape(PictureBox picCanvas)
+        public void PlotShape(Graphics g)
         {
-            mGraph=picCanvas.CreateGraphics();
+            g.TranslateTransform(200, 200);
+            g.RotateTransform(rotationAngle);
             mPen = new Pen(Color.Blue, 3);
-            mGraph.DrawRectangle(mPen, 0, 0, mWidth * SF, mHeight * SF);
+            g.DrawRectangle(mPen, -mWidth / 2, -mHeight / 2, mWidth, mHeight);
+            g.ResetTransform();
         }
+
         public void CloseForm(Form ObjForm)
         { ObjForm.Close(); }
+        
     }
 }

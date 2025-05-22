@@ -12,6 +12,8 @@ namespace tutoria
 {
     public partial class Form1 : Form
     {
+        
+
         private Rectangulo objRectangulo=new Rectangulo();
         
         public Form1()
@@ -35,7 +37,8 @@ namespace tutoria
             objRectangulo.PerimetroRectangulo();
             objRectangulo.AreaRectangulo();
             objRectangulo.ImprimirData(txtPerim,txtArea);
-            objRectangulo.PlotShape(canvas);
+            objRectangulo.rotationAngle = int.Parse(txtRotationAngle.Text);
+            canvas.Invalidate();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -46,6 +49,24 @@ namespace tutoria
         private void tnSalir_Click(object sender, EventArgs e)
         {
             objRectangulo.CloseForm(this);
+        }
+
+        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            objRectangulo.rotationAngle = e.NewValue;
+            txtRotationAngle.Text = objRectangulo.rotationAngle.ToString();
+            
+            canvas.Invalidate();
+        }
+
+        private void canvas_LoadCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+           
+        }
+
+        private void canvas_Paint(object sender, PaintEventArgs e)
+        {
+            objRectangulo.PlotShape(e.Graphics);
         }
     }
 }
